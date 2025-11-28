@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, white, #ADD8E6);
+    background-size: 200%;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #0707ae;
+    font-weight: bold;
+}
+
+.header-actions{
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.header-actions select{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.header-actions select{
+    font-size: 13px;
+
+}
+.language{
+    margin-right: 15px;
+}
+.main-area{
+    display: flex;
+}
+.sidebar{
+    max-width: 25%;
+    padding: 30px 25px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 12px;
+    margin-right: 20px;
+}
+.menu-item{
+    padding: 14px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-item i{
+    width: 20px;
+    margin-right: 10px;
+}
+.menu-item:hover{
+    background-color: rgba(166, 234, 249, 0.935);
+    border-radius: 5px;
+    color: #0707ae;
+}
+.content{
+    padding: 40px;
+    background-color: #f5f4f4;
+    width: 80%;
+    height: 63rem;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.content-header h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.back{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.back i{
+    margin-right: 5px;
+}
+.form-area form{
+    background: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 40rem;
+}
+.field{
+    margin: 30px 25px;
+}
+.field label{
+    display: block;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.field label span{
+    color: red;
+}
+.field small{
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.field input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 1.7em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    gap: 25px;
+    margin-right: 35px;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+.btn i{
+    margin-right: 5px;
+}
+.btn-huy{
+    color: white;
+    background-color: #6c757d ;
+}
+.btn-taomoi{
+    color: white;
+    background-color: #3498db;
+}
+footer{
+    text-align: center;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    border-top: 1px solid #dddd;
+}
