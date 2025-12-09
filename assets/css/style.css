@@ -115,7 +115,8 @@ body {
 }
 
 .custom-offcanvas-sidebar {
-    width: 250px;
+    max-width: 60%;
+    width: 220px;
     background-color: white;
 }
 
