@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!appName.value.trim()) {
         appName.classList.add('is-invalid');
-        alert('Vui lòng nhập Tên App.');
+        // alert('Vui lòng nhập Tên App.');
         appName.focus();
         return; 
       }
@@ -22,12 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
           form.reset();
           [appName, appCode].forEach(i=> i.classList.remove('is-invalid','is-valid'));
         });
-        }
+      }
 
       const code = appCode.value.trim();
-      if (!code || !codePattern.test(code)) {
+      if(!code){
         appCode.classList.add('is-invalid');
-        alert('App Code không hợp lệ. Chỉ chấp nhận chữ, số, dấu gạch ngang (-) và gạch dưới (_).');
+        const errorMessage = appCode.nextElementSibling;  
+        if (errorMessage && errorMessage.classList.contains('invalid-feedback')) {
+          errorMessage.textContent = 'Vui lòng nhập App Code.';
+        }
+        appCode.focus();
+        return;
+      }
+      if (!codePattern.test(code)) {
+        appCode.classList.add('is-invalid');
+        const errorMessage = appCode.nextElementSibling;
+        if (errorMessage && errorMessage.classList.contains('invalid-feedback')) {
+          errorMessage.textContent = 'App Code không hợp lệ.';
+        }
+        // alert('App Code không hợp lệ. Chỉ chấp nhận chữ, số, dấu gạch ngang (-) và gạch dưới (_).');
         appCode.focus();
         return;
       }
