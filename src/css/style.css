@@ -61,7 +61,7 @@ body {
 }
 
 .custom-sidebar {
-    width: 250px;
+    width: 20%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
     padding: 20px 0;
     position: sticky; 
@@ -74,10 +74,11 @@ body {
 }
 
 .menu-item{
+    margin: 1px;
     padding: 14px 20px;
     font-size: 1.2rem;
     cursor: pointer;
-     transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 .menu-link{
     text-decoration: none;
@@ -94,7 +95,7 @@ body {
     background-color: rgb(208, 243, 255);
     border-radius: 5px;
     color: #0707ae;
-    transform: translateX(3.5px);
+    transform: translateX(3px);
 }
 .menu-item:hover a{
     background-color: rgb(208, 243, 255);
@@ -108,7 +109,7 @@ body {
     background-color: rgb(208, 243, 255);
     border-radius: 5px;
     color: #0707ae;
-    transform: translateX(3.5px);
+    transform: translateX(3px);
 }
 
 .menu-item.active .menu-link{
@@ -160,7 +161,7 @@ body {
 /* Form */
 .card {
     border-radius: 8px; 
-    height: 35rem;
+    height: 30rem;
 }
 
 .form-control-lg {
